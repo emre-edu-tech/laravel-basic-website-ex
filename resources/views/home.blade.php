@@ -1,23 +1,17 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('master')
 
-        <title>Home Page</title>
+@section('title', 'Home')
 
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="display-4 text-center">My Website</h1>
-            <div class="row">
-                <div class="col">ONE</div>
-                <div class="col">TWO</div>
-                <div class="col">THREE</div>
+@section('content')
+
+        <div class="container mt-4 mb-5">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 class="mt-4">Laravel Example Website</h1>
+                    <h3 class="mt-4">Web Application Development</h3>
+                    <img src="{{ asset('images/web-dev.jpeg') }}" alt="Web development" class="img-fluid">
+                </div>
             </div>
         </div>
 
-        <script src="{{ asset('js/app.js') }}"></script>
-    </body>
-</html>
+@endsection
