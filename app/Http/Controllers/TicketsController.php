@@ -35,12 +35,7 @@ class TicketsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validator(
-            'title' => 'required|string',
-            'content' => 'required|string',
-        );
-
-        $ticket = new Ticket();
+        
     }
 
     /**
