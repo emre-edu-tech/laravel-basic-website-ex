@@ -14,5 +14,6 @@
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/weather', 'WeatherController@index');
 
 Route::resource('tickets', 'TicketsController');
