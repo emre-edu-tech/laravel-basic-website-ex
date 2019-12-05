@@ -17,3 +17,6 @@ Route::get('/contact', 'PagesController@contact');
 Route::match(array('get', 'post'), 'weather', 'WeatherController@index');
 
 Route::resource('tickets', 'TicketsController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
